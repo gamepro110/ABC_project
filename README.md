@@ -1,18 +1,12 @@
 # ---project
 
-app with parts based of [Walnut](https://github.com/TheCherno/Walnut)
+app-base based of [Walnut](https://github.com/TheCherno/Walnut)
 
 ## Todos
 
-- add submodules
-  - imgui
-  - glfw
-- make glfw window
-  - use vulkan backend for windows
-  - use vulkan backend for linux
-  - use metal backend for macos
 - create imgui dockable context
-
+- (low priority) make glfw window
+  - (low priority) use metal backend for macos
 
 ## supported platforms
 
@@ -23,9 +17,9 @@ app with parts based of [Walnut](https://github.com/TheCherno/Walnut)
 
 ### planned
 
-- Macos
+- Macos (very low priority)
 
 ## contributors
 
-- [void](...)
-- [Koppertje24](...)
+- [void](https://github.com/gamepro110)
+- [Koppertje24](https://github.com/koppertje24)

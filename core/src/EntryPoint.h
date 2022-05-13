@@ -16,8 +16,6 @@
 extern ABC_Name::Application* ABC_Name::CreateApplication(int argc, char** argv);
 bool g_ApplicationRunning = true;
 
-#if defined(ABC_WINDOWS) || defined(ABC_LINUX)
-
 namespace ABC_Name {
 	int Main(int argc, char** argv) {
 		Log::Init();
@@ -32,7 +30,7 @@ namespace ABC_Name {
 	}
 }
 
-#	if defined(ABC_WINDOWS) && defined(ABC_DIST)
+#if defined(ABC_WINDOWS) && defined(ABC_DIST)
 
 #include <Windows.h>
 
@@ -40,14 +38,10 @@ int APIENTRY WinMain(HINSTANCE hInst, HINSTANCE hInstPrev, PSTR cmdline, int cmd
 	return ABC_Name::Main(__argc, __argv);
 }
 
-#	else
+#else
 
 int main(int argc, char** argv) {
 	return ABC_Name::Main(argc, argv);
 }
 
-#	endif // 0
-
-# elif defined(ABC_MACOS)
-
-#endif
+#endif // 0

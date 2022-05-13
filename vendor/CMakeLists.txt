@@ -84,3 +84,6 @@ set_target_properties(
 	CXX_STANDARD 20
 	FOLDER "deps/spdlog"
 )
+
+## catch2
+add_subdirectory(catch2)
